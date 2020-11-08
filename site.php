@@ -34,7 +34,7 @@
 
 
 
-    <form action="site.php" method="get">
+    <form action="site.php" method="post">
 
     
         Name: <input type="text" name="name">
@@ -48,9 +48,9 @@
 
     <?php 
 
-        $name = $_GET["name"];
-        $age = $_GET["age"];
-        $birthday = $_GET["birthday"];
+        $name = $_POST["name"];
+        $age = $_POST["age"];
+        $birthday = $_POST["birthday"];
 
 
         echo "Your name is $name <br>";
