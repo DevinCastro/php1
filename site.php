@@ -36,15 +36,26 @@
 
     <form action="site.php" method="get">
 
-        <label>Name</label>
-        <input type="text" name="name">
+    
+        Name: <input type="text" name="name">
+        Age: <input type="number" name="age">
+        Birthday: <input type="date" name="birthday">
+        
         <button>Submit</button>
 
     </form>
     <br>
 
     <?php 
-        echo $_GET["name"]
+
+        $name = $_GET["name"];
+        $age = $_GET["age"];
+        $birthday = $_GET["birthday"];
+
+
+        echo "Your name is $name <br>";
+        echo "You are $age years old <br>";
+        echo "Your birthday is $birthday <br>";
     ?>
 
 
